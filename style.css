@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-width: 1344px !important;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* ---------Basic CSS-------- */
+
+.navbar {
+    padding-top: 57px;
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    /* The position and location of the navbar */
+  }
+  .navbar .navbar-nav {
+    column-gap: 67px;
+    /* colum gap of every button */
+  }
+  .navbar .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 144%;
+    color: white;
+    /* Every of button sixe, shape and weight etc */
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #4756df;
+    /* Which color will show while hobering  */
+    
+  }
+  .navbar .navbar-nav .nav-item.active a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 144%;
+    color: #4756df;
+    /* THe color of a active button always */
+  }
+
+.mybtn{
+    display: inline-block;
+    background: #6a4df4;
+    border-radius: 10px;
+    padding: 15px 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+    /* Button in navbar */
+}
+
+/*------------Banner Part------------- */
+
+.bannar_inner{
+    padding: 325px 0 176px;
+    position: relative;
+    z-index: 1;
+}
+
+.bannar_img_1{
+    background: url(../img/banner\ 1.png) no-repeat center;
+    background-size: cover;  
+}
+
+.bannar_img_2{
+    background: url(../img/bannar\ 2.jpg) no-repeat center;
+    background-size: cover;  
+}
+
+.bannar_img_3{
+    background: url(../img/bannar\ 3.jpg) no-repeat center;
+    background-size: cover;  
+}
+
+.bannar_img_4{
+    background: url(../img/bannar\ 4.jpg) no-repeat center;
+    background-size: cover;  
+}
+
+.bannar_inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.bannar_inner .container {
+  width: 995px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bannar_inner .container h1 {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
+.bannar_inner .container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #fff;
+  padding: 51px 0px 40px;
+}
+#bannar {
+  position: relative;
+}
+#bannar .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 53px;
+  transform: translateX(-50%);
+  display: flex !important;
+  column-gap: 2px;
+}
+#bannar .slick-dots button {
+  border-radius: 100%;
+  background: #4756df;
+  height: 24px;
+  width: 24px;
+  font-size: 0;
+  border: 0;
+}
+#bannar .slick-active button {
+  border: 7px solid #fff;
+}
